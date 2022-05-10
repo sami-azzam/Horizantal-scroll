@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="scrollmenu">
+        <a id="t1">Lot1</a>
+        <a id="t2">Lot2</a>
+        <a id="t3">Lot3</a>
+        <a id="t4">Lot4</a>
+        <a id="t5">Lot5</a>
+        <a id="t6">Lot6</a>
+        <a id="t7">Lot7</a>
+        <a id="t8">Lot8</a>
+        <a id="t9">Lot9</a>
+        <a id="t10">Lot10</a>
+        <a id="t11">Lot11</a>
+        <a id="t12">Lot12</a>
+        <a id="t13">Lot13</a>
+        <a id="t14">Lot14</a>
+        <a id="t15">Lot15</a>
+        <a id="t16">Lot16</a>
+        <a id="t17">Lot17</a>
+        <a id="t18">Lot18</a>
+        
+    </div>
+    <div class="spacer"></div>
+    <div>
+        <a onclick="scrollID(document.getElementById('t1').offsetLeft)">Lot1</a>
+        <a onclick="scrollID(document.getElementById('t2').offsetLeft)">Lot2</a>
+        <a onclick="scrollID(document.getElementById('t3').offsetLeft)">Lot3</a>
+        <a onclick="scrollID(document.getElementById('t4').offsetLeft)">Lot4</a>
+        <a onclick="scrollID(document.getElementById('t5').offsetLeft)">Lot5</a>
+        <a onclick="scrollID(document.getElementById('t6').offsetLeft)">Lot6</a>
+        <a onclick="scrollID(document.getElementById('t7').offsetLeft)">Lot7</a>
+        <a onclick="scrollID(document.getElementById('t8').offsetLeft)">Lot8</a>
+        <a onclick="scrollID(document.getElementById('t9').offsetLeft)">Lot9</a>
+        <a onclick="scrollID(document.getElementById('t10').offsetLeft)">Lot10</a>
+    </div>
+    <script>
+        var scrollmenu = document.querySelector('.scrollmenu');
+        function scrollID(e) {
+            scrollmenu.scrollTo({
+                top: 0,
+                left: e,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
